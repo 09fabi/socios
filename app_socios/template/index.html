@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Homepage</title>
+</head>
+<body class="container mt-5 fondo" style="font-family: 'Montserrat', sans-serif;">
+    <div class="alert alert-primary display-1 text-center text-dark"><b>CD LOS CAMPEONES</b></div>
+    
+    
+    <div class="row" style="font-family: 'Montserrat', sans-serif;">
+        <!-- Primera Card -->
+        <div class="col-md-6">
+            <div style="width: 400px; margin-left: 120px; align-items: center; margin-top: 70px;" class="card border-dark">
+                <img style="height: 250px; width: 250px; margin-top: 30px;" src="{% static 'assets/socios.jpg' %}" class="card-img-top" alt="Imagen 1">
+                <div class="card-body">
+                    <a href="listado/">
+                        <button type="button" style="width: 320px;" class="btn btn-dark"><b>Lista De Socios</b></button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Segunda Card -->
+        <div class="col-md-6">
+            <div style="width: 400px; margin-left: 150px; align-items: center; margin-top: 70px;" class="card border-dark">
+                <img style="height: 250px; width: 250px; margin-top: 30px;" src="{% static 'assets/add.jpg' %}" class="card-img-top" alt="Imagen 2">
+                <div class="card-body">
+                    <a href="agregar/">
+                        <button type="button" style="width: 320px;" class="btn btn-dark"><b>Añadir Socio</b></button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
